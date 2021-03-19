@@ -1,46 +1,35 @@
 /* 按鈕大外框 */
 .frame_out{
     position: relative;
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-  justify-content: space-evenly;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 /* 按鈕置中外框 */
-.frame_in{
-    position: absolute;
-   
-    width: 80%;
-    height: 500px;
-    float: left;
-    top: 40%;
-    left: 50%;
-    margin: -200px 0 0 -40%;
-}
+
 
 /* 按鈕 */
 .button
 {
     position: relative;
-    margin-left: 30px;
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
     border-radius: 3%;
-    float: left;
-    margin: 30px 0px 0px 150px;
+    margin: 2% 5%;
     
 }
 /* 按鈕圖 */
 .img{
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
     border-radius: 10%;
    
 }
 .img:hover{
-    width: 230px;
-    height: 230px;
+    width: 380px;
+    height: 380px;
     
 }
 /* 按鈕透明div */
@@ -49,8 +38,8 @@
     opacity: 80%;
     position: absolute;
     background-color: cyan;
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
     border-radius: 3%;   
 }
 .button_framein:hover{
