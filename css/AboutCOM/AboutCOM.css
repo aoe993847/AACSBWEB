@@ -1,0 +1,16 @@
+.picture{
+    width: 100%;
+}
+.history{
+    width: 100%;
+    
+}
+.title{
+    font-size: 40px;
+}
+
+@media screen and (Max-Width:  1300px) {
+    .history{
+        padding: 10%;
+    }
+}
