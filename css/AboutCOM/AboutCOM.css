@@ -1,0 +1,74 @@
+body{
+    background-image: url(/img/AboutCOM/pexels-brandon-montrone-1179229.jpg);
+}
+
+.articlebox{
+    width: 100%;
+    padding: 10%;
+    border: 2px solid rgb(221, 220, 220);
+    background-color: rgba(255, 255, 255);
+}
+.trans{
+    background-color: rgba(255, 255, 255,0.755);
+}
+.title{
+    font-size: 60px;
+    margin-bottom: 5%;
+    color: #36a88a;
+    font-weight: 700;
+}
+.article{
+    font-size: 30px;
+}
+.Distinctiveness li{
+    font-size: 30px;
+}
+.Administration ul{
+    list-style-type: square;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Administration li{
+    width: 40%;
+    font-size: 30px;
+    margin: 20px 50px;
+}
+.information{
+    font-size: 30px;
+   
+}
+
+@media screen and (Max-Width:  1000px) {
+    .Administration li{
+        width: 100%;
+    }
+}
+
+@media screen and (Max-Width:  600px) {
+    .articlebox{
+        padding: 3%;
+    }
+    .title{
+        font-size: 30px;
+        margin-bottom: 5%;
+        color: #36a88a;
+        font-weight: 700;
+    }
+    .article{
+        font-size: 20px;
+    }
+    .Distinctiveness li{
+        font-size: 20px;
+    }
+    .Administration li{
+        font-size: 20px;
+    }
+    .Administration ul{
+        justify-content: none;
+    }
+    .information{
+        font-size: 20px;
+       
+    }
+}
