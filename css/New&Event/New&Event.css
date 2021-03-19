@@ -1,0 +1,171 @@
+/* 按鈕大外框 */
+.frame_out{
+    position: relative;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+/* 按鈕置中外框 */
+.frame_in{
+    position: absolute;
+   
+    width: 80%;
+    height: 500px;
+    float: left;
+    top: 40%;
+    left: 50%;
+    margin: -200px 0 0 -40%;
+}
+
+/* 按鈕 */
+.button
+{
+    position: relative;
+    margin-left: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 3%;
+    float: left;
+    margin: 30px 0px 0px 150px;
+    
+}
+/* 按鈕圖 */
+.img{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+   
+}
+.img:hover{
+    width: 230px;
+    height: 230px;
+    
+}
+/* 按鈕透明div */
+.button_framein
+{
+    opacity: 80%;
+    position: absolute;
+    background-color: cyan;
+    width: 200px;
+    height: 200px;
+    border-radius: 3%;   
+}
+.button_framein:hover{
+    opacity: 0%;
+    
+}
+
+/* 按鈕大標題 */
+.button_Text{
+    width: 58%;
+    height: 30%;
+    font-size: 180%;
+    top: 50%;
+    left: 50%;
+    margin: 20% 0 0 25%;
+    
+}
+/* 新聞橫條 */
+.list-1{
+    width: 100%;
+    height:200px;
+}
+.new{
+    background-color: gray;
+    width: 90%;
+    height:100%;
+    margin-left: 5%;
+    display: flex;
+}
+.new-text{
+    background-color: floralwhite;
+    width: 780px;
+    height:95%;
+    margin-top: 6px;
+    margin-left: 10px;
+}
+.img-news{
+    width: 400px;
+    height:95%;
+    margin-top: 6px;
+    margin-left: 10px;
+}
+/*==================== page  start ==================== */
+
+.pagination {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 2;
+  }
+  
+  .pagination:after {
+    content: "";
+    clear: both;
+  }
+  
+  .pagination-button {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 0px solid transparent;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 30px;
+    margin: 5px;
+  }
+  
+  .pagination-button:hover {
+    color: orange;
+  }
+  
+  .pagination-button.active {
+    background-color: orange;
+    border-color: white;
+    color: black;
+  }
+  
+  .pagination-button:first-of-type {
+    border-radius: 18px 0 0 18px;
+    font-size: 28px;
+    background-color: transparent;
+  }
+  
+  .pagination-button:last-of-type {
+    border-radius: 0 18px 18px 0;
+    font-size: 28px;
+    background-color: transparent;
+  }
+  .pagination-items {
+    display: flex;
+    width: 100%;
+    height: 1040px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+   
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
