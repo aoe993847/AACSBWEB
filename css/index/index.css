@@ -1,0 +1,210 @@
+.title {
+  position: relative;
+  text-align: center;
+  transform: translateZ(0);
+  transform-style: preserve-3d;
+}
+
+.text {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 10vw ;
+  line-height: 1.0;
+}
+
+.write {
+  color: white;
+  text-shadow: 0 0 0.1em rgb(0, 174, 255);
+  transform-style: preserve-3d;
+  animation: write linear both;
+  
+}
+.laser {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* To avoid the blur getting masked by the clip-path we had to duplicate the element */
+  filter: blur(4px) contrast(10);
+  pointer-events: none;
+}
+
+.laser{
+  display: inline-block;
+}
+
+.laser {
+  color: hsl(0, 100%, 75%);
+  text-shadow: 0 0 0.1em currentColor;
+  transform: translateZ(5px);
+  animation: laser linear both;
+}
+
+.write,
+.laser {
+  animation-duration: 2s;
+  animation-delay: calc(0s + var(--word-index) * 160ms);
+  animation-iteration-count: 1;
+}
+
+.title:hover .word,
+.title:hover .word {
+  animation-play-state: paused;
+}
+
+/* .title .text .word,
+.title .text .word::before {
+  animation-play-state: paused;
+  animation-delay: -0.4s;
+} */
+
+@keyframes write {
+  from, 30% { clip-path: polygon(-20% 0%, -15% 0%, -15% 100%, -20% 100%) }
+  70%, to { clip-path: polygon(-15% 0%, 120% 0%, 120% 100%, -15% 100%) }
+}
+
+@keyframes laser {
+  from, 30% { clip-path: polygon(-20% 0%, -15% 0%, -15% 100%, -20% 100%) }
+  70%, to { clip-path: polygon(115% 0%, 120% 0%, 120% 100%, 115% 100%) }
+}
+
+#pagelink{
+  margin-top: 2%;
+}
+#pagelink ul li{
+
+  margin-right: 1.5em;
+  font-size: 20px;
+  color: white;
+  z-index: 1;
+  
+}
+
+#pagelink a{
+  color: white;
+  border-bottom: 2px solid white;
+}
+#pagelink li:hover a{
+  color: orange;
+  border-bottom: 2px solid orange;
+}
+
+.titlebox{
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  background-image: url(/img/index/pexels-chait-goli-2093323.jpg);
+  padding-top: 10%;
+  padding-bottom: 0%;
+}
+
+/* include the board in the center of the viewport */
+.board {
+  max-width: 1500px;
+  width: 90vw;
+  margin: 4rem auto;
+  /* display grid without specifying any structure, at least beyond the media query
+  this is mostly helpful for alignment purposes
+  */
+  display: grid;
+  border: 4px solid hsl(207, 79%, 21%);
+  background: #fff;
+  box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.3);
+  /* position relative to absolute position the pseudo element */
+  position: relative;
+}
+/* include a slightly rotated rectangle of the same size of the board, right behind it */
+
+
+
+/* for the heading include a slightly darker background */
+.board__heading {
+  /* margin to have the heading overlap on the surrounding border */
+  margin: -4px;
+  margin-bottom: 1.75rem;
+  font-family: "Chivo", sans-serif;
+  font-size: 1.25rem;
+  color: #fff;
+  background: hsl(200, 100%, 10%);
+  padding: 0.75rem;
+  padding-left: 1.5rem;
+}
+
+/* navigation displaying the items evenly in a non-wrapping row */
+.board__nav {
+  display: flex;
+  margin: 1rem 2rem;
+  justify-content: space-evenly;
+  width: 80%;
+  justify-self: center;
+}
+/* style the buttons to have a bit of whitespace around the text
+a background is specified in the script */
+.nav--item {
+  border: none;
+  background: none;
+  color: inherit;
+  font-size: 0.85rem;
+  font-family: inherit;
+  text-transform: capitalize;
+  border-radius: 30px;
+  letter-spacing: 0.05rem;
+  padding: 0.3rem 0.75rem;
+  cursor: pointer;
+}
+
+/* on hover and focused slightly decrease the color of the button and add an underline */
+.nav--item:hover,
+.nav--item:focus {
+  color: hsl(0, 0%, 35%);
+  text-decoration: underline;
+}
+
+/* for the section describing the news items, display the items in a single column layout */
+.board__news {
+  display: flex;
+  margin: 1rem 0 3rem;
+  flex-direction: column;
+  width: 80%;
+  justify-self: center;
+  /* dictate a maximum height to allow for vertical scroll */
+  max-height: 450px;
+  overflow-y: auto;
+  
+}
+/* minor style changes for the scrollbar */
+.board__news::-webkit-scrollbar {
+  width: 0.25rem;
+}
+.board__news::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px hsla(200, 100%, 5%, 0.3);
+}
+.board__news::-webkit-scrollbar-thumb {
+  background: hsl(200, 100%, 10%);
+  border-radius: 5px;
+}
+
+/* remove the default properties of the anchor links describing the news items */
+.news--item {
+  text-decoration: none;
+  color: inherit;
+  margin: 1.25rem 0;
+  padding-left: 0.75rem;
+  border-left: 4px solid blue;
+  
+}
+/* on hover and when focused slightly decrease the weight of the anchor links */
+.news--item:hover,
+.news--item:focus {
+  color: hsl(0, 0%, 35%);
+}
+.news--item .date {
+  font-size: larger;
+}
+.news--item .title {
+  font-size: larger;
+}
+
+
+
