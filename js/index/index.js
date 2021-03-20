@@ -1,12 +1,12 @@
+$(document).ready(function() { 
+    var a = $("#pagelink").offset().top; 
 
- 
-window.onscroll = function() { 
- 
- 
-    if (document.body.scrollTop >= 200) { 
- 
-     $("#pagelink").css("background-color","black")
- 
- 
-    } 
-}
+    $(document).scroll(function(){ 
+     if($(this).scrollTop() > 50) 
+     { 
+      $('#pagelink').css({"background":"rgba(0, 0, 0, 0.541)"}); 
+     } else { 
+      $('#pagelink').css({"background":"black"}); 
+     } 
+    }); 
+   }); 

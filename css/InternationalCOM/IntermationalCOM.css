@@ -1,0 +1,173 @@
+.box{
+    padding-bottom: 1%;
+}
+.sap{
+    width: 100%;
+    padding: 2% 0;
+    border-bottom: 2px solid black;
+}
+.title{
+    width: 100%;
+    font-size: 60px;
+    text-align: center;
+}
+.article{
+    width: 80%;
+    margin: 3% auto;
+    font-size: 30px;
+}
+.partner{
+    width: 100%;
+    padding: 2% 0;
+    background-image: url(/img/InternationalCOM/pexels-ákos-szabó-440731.jpg);
+    background-size: 100% 100%;
+}
+.articlecard{
+    width: 80%;
+    margin: 3% auto;
+    font-size: 30px;
+    border: 2px solid black;
+    padding: 2%;
+    background-image: url(/img/InternationalCOM/pexels-giftpunditscom-1303092.jpg);
+    background-size: 100% 100%;
+}
+.cardbox{
+    width: 100%;
+    display: flex;
+    padding: 3% 2%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.cardp{
+    width: 500px;
+    display: flex;
+    height: 400px;
+    margin: 2% 0;
+}
+.picture{
+    width: 46%;
+    height: 400px;
+    background-image: url(/img/InternationalCOM/pexels-chait-goli-2093323.jpg);
+    background-size: 110% 100%;
+    
+}
+.word{
+    width: 48%;
+    box-shadow: -4px 0px 10px black;
+    border: 2px solid black;
+    padding: 3% 1%;
+    background-color: rgba(255, 255, 255, 0.733);
+}
+.word header{
+    text-align: center;
+    font-size: 30px;
+}
+.word p{
+    text-align: start;
+    font-size: 22px;
+    margin-top: 5%;
+}
+.speakers{
+    width: 100%;
+    display: flex;
+    border: 2px solid black;
+    padding: 2%;
+}
+.spicture{
+    width: 500px;
+    height: 500px;
+    background-image: url(/img/InternationalCOM/pexels-chait-goli-2093323.jpg);
+    background-size: 100% 100%;
+}
+.sarticle{
+    width: 75%;
+    font-size: 30px;
+    padding: 2%;
+}
+
+@media screen and (Max-Width: 1280px) {
+
+    .sarticle{
+        font-size: 25px;
+    }
+  }
+
+  @media screen and (Max-Width: 1280px) {
+    .article{
+        font-size: 25px;
+    }
+    .speakers{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sarticle{
+        width: 100%;
+       
+    }
+    .word header{
+        font-size: 25px;
+    }
+    .word p{
+        font-size: 17px;
+    }
+    .articlecard{
+        font-size: 25px;
+    }
+  }
+
+  @media screen and (Max-Width: 550px) {
+    .title{
+        font-size: 30px;
+    }
+    .spicture{
+        width: 400px;
+        height: 400px;
+    }
+    .article{
+        font-size: 18px;
+    }
+    .speakers{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sarticle{
+        width: 100%;
+       
+    }
+    .word header{
+        font-size: 20px;
+    }
+    .word p{
+        font-size: 15px;
+    }
+    .articlecard{
+        font-size: 18px;
+    }
+    .sarticle{
+        font-size: 18px;
+    }
+    .cardp{
+        width: 400px;
+        height: 300px;
+    }
+    .picture{
+        height: 300px;  
+    }
+  }
+  @media screen and (Max-Width: 440px) {
+    .cardp{
+        flex-wrap: wrap;
+        height: auto;
+        margin: 5% 0;
+        justify-content: center;
+
+    }
+    .picture{
+        width: 80%;
+        height: 200px;
+    }
+    .word{
+        width: 100%;
+    }
+  }

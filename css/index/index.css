@@ -66,27 +66,77 @@
   from, 30% { clip-path: polygon(-20% 0%, -15% 0%, -15% 100%, -20% 100%) }
   70%, to { clip-path: polygon(115% 0%, 120% 0%, 120% 100%, 115% 100%) }
 }
-
+/* navbar start */
 #pagelink{
-  margin-top: 2%;
+  background-color: black;
+  padding: 1% 0;
+  border-color: transparent;
+ 
+  
 }
 #pagelink ul li{
 
-  margin-right: 1.5em;
-  font-size: 20px;
+
   color: white;
   z-index: 1;
-  
+
 }
 
-#pagelink a{
+#pagelink li a{
   color: white;
-  border-bottom: 2px solid white;
+  font-size: 20px;
 }
 #pagelink li:hover a{
   color: orange;
   border-bottom: 2px solid orange;
+  background-color: transparent;
 }
+#active{
+  color: orange !important;;
+  border-bottom: 2px solid orange;
+}
+.menu{
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+
+@media screen and (Max-Width:  1400px) {
+  .logo{
+    width: 100%;
+  }
+  #pagelink{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  .menu{
+    width: 100%;
+  }
+}
+@media screen and (Max-Width:  1100px) {
+
+  #pagelink li a{
+    font-size: 15px;
+  }
+}
+@media screen and (Max-Width:  992px) {
+
+  #pagelink{
+    display: block;
+    justify-content: none;
+
+  }
+  #pagelink li a{
+    font-size: 11px;
+  }
+  .menu{
+    justify-content: none;
+  }
+}
+
+/* navbar end */
 
 .titlebox{
   display: flex;
@@ -206,5 +256,39 @@ a background is specified in the script */
   font-size: larger;
 }
 
+@media (max-width: 991px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+
+.navbar-collapse {
+  border-top: 1px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.navbar-collapse.collapse {
+  display: none!important;
+}
+.navbar-nav>li {
+  float: none;
+}
+.navbar-nav>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.navbar-text {
+  float: none;
+  margin: 15px 0;
+}
+/* since 3.1.0 */
+.navbar-collapse.collapse.in { 
+  display: block!important;
+}
+.collapsing {
+  overflow: hidden!important;
+}
+}
 
 
