@@ -7,8 +7,7 @@
     <title>Document</title>
 
      <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
     integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
 
@@ -16,11 +15,57 @@
     <link rel="stylesheet" href="/css/New&Event image">
 </head>
 <body>
+   <!-- navbar start -->
+ <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="pagelink">
+  <div class="container-fluid"> 
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse"
+        data-target="#example-navbar-collapse">
+      <span class="sr-only"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="logo" href="#home"><img src="/img/index/chu_logo.png" alt=""></a>
+  </div>
+  <div class="collapse navbar-collapse" id="example-navbar-collapse">
+    <ul class="nav   menu">
+           
+      <li><a id="active" href="#">Home</a></li>
+
+      <li><a href="/AboutCOM.html">About&nbsp;COM</a></li>
+
+      <li><a href="#services">Academics</a></li>
+
+      <li><a href="#folio">AACSB&nbsp;Accreditation</a></li>
+
+      <li><a href="#testimonials">Admisson</a></li>
+
+      <li><a href="/InternationalCOM.html">International&nbsp;Com</a></li>
+
+      <li><a href="#contact">LifeinCOM</a></li>
+
+      <li><a href="/New&Event.html">New&Event</a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
+ <!-- navbar end -->
+<div class="nb">
+</div>
     <div class="frame_out">
-       
-            
-                <div class="button">
-                    <img src="/img/New&Event image/sc.jpeg"  class="img">
+                <div class="button"  id="listBtn" onclick="listBtn()">
+                    <img src="/img/New&Event/sc.jpeg"  class="img">
+                    <div class="button_framein">
+                        <div class="button_Text">
+                            <p class="p1" >School News</p></div>
+                        </div>
+                       
+                    
+                </div>
+                <div class="button"  id="listBtn1" onclick="listBtn1()">
+                    <img src="/img/New&Event/sc.jpeg"  class="img">
                     <div class="button_framein">
                         <div class="button_Text">
                             <p  >School News</p></div>
@@ -28,8 +73,8 @@
                        
                     
                 </div>
-                <div class="button">
-                    <img src="/img/New&Event image/sc.jpeg"  class="img">
+                <div class="button" id="listBtn2" onclick="listBtn2()">
+                    <img src="/img/New&Event/sc.jpeg"  class="img">
                     <div class="button_framein">
                         <div class="button_Text">
                             <p  >School News</p></div>
@@ -37,8 +82,8 @@
                        
                     
                 </div>
-                <div class="button">
-                    <img src="/img/New&Event image/sc.jpeg"  class="img">
+                <div class="button" id="listBtn3" onclick="listBtn3()">
+                    <img src="/img/New&Event/sc.jpeg"  class="img">
                     <div class="button_framein">
                         <div class="button_Text">
                             <p  >School News</p></div>
@@ -46,8 +91,8 @@
                        
                     
                 </div>
-                <div class="button">
-                    <img src="/img/New&Event image/sc.jpeg"  class="img">
+                <div class="button" id="listBtn4" onclick="listBtn4()">
+                    <img src="/img/New&Event/sc.jpeg"  class="img">
                     <div class="button_framein">
                         <div class="button_Text">
                             <p  >School News</p></div>
@@ -55,17 +100,8 @@
                        
                     
                 </div>
-                <div class="button">
-                    <img src="/img/New&Event image/sc.jpeg"  class="img">
-                    <div class="button_framein">
-                        <div class="button_Text">
-                            <p  >School News</p></div>
-                        </div>
-                       
-                    
-                </div>
-                <div class="button">
-                    <img src="/img/New&Event image/sc.jpeg"  class="img">
+                <div class="button" id="listBtn5" onclick="listBtn5()">
+                    <img src="/img/New&Event/sc.jpeg"  class="img">
                     <div class="button_framein">
                         <div class="button_Text">
                             <p  >School News</p></div>
@@ -79,92 +115,110 @@
 
        
     </div>
-<!-- aaa -->
-<div class="boxs">
-    <div class="list">
-      
-      <div class="list-1" >
+
+<!-- 造型1 -->
+<div class="boxs" >
+    <div class="list textlistn"  > <!--id="textlistn" style="display:none;" -->
+      <div class="list-1 "   >
           <div class="new" >
-            <img src="/img/New&Event image/sc.jpeg"  class="img-news">
-            <div  class="new-text" ></div>
+            <a href="http://news.chu.edu.tw/p/406-1001-20311,r13.php?Lang=zh-tw"><img src="/img/New&Event/new.jpg"  class="img-news"></a>
+            <div  class="new-text" >
+              <p>2021-02-23</p>
+              <a href="http://news.chu.edu.tw/p/406-1001-20311,r13.php?Lang=zh-tw"><h3>解決AI人才荒！產學攜手開創台灣企業發展獲利新格局</h1></a>
+              <h5>隨著人工智慧人才培育成為顯學，全球都在苦惱著該如何培育AI團隊的同時，國內大學院校所培育的學生...</h1>
+
+            </div>
           </div>
       </div>
-      <div class="list-1" >
+      <div class="list-1"  >
         <div class="new" >
-          <img src="/img/New&Event image/sc.jpeg"  class="img-news">
+          <a href="http://news.chu.edu.tw/p/406-1001-20311,r13.php?Lang=zh-tw"><img src="/img/New&Event/new.jpg"  class="img-news"></a>
+          <div  class="new-text" >
+            <p>2021-02-23</p>
+            <a href="http://news.chu.edu.tw/p/406-1001-20311,r13.php?Lang=zh-tw"><h3>解決AI人才荒！產學攜手開創台灣企業發展獲利新格局</h1></a>
+            <h5>隨著人工智慧人才培育成為顯學，全球都在苦惱著該如何培育AI團隊的同時，國內大學院校所培育的學生...</h1>
+
+          </div>
+        </div>
+    </div>
+    <div class="list-1"   >
+        <div class="new" >
+          <img src="/img/New&Event/sc.jpeg"  class="img-news">
+          <div  class="new-text" ></div>
+        </div>
+    </div>
+    <div class="list-1"  >
+        <div class="new"  >
+          <img src="/img/New&Event/sc.jpeg"  class="img-news">
+          <div  class="new-text" ></div>
+        </div>
+    </div>
+    <div class="list-1"  >
+        <div class="new" >
+          <img src="/img/New&Event/sc.jpeg"  class="img-news">
           <div  class="new-text" ></div>
         </div>
     </div>
     <div class="list-1" >
         <div class="new" >
-          <img src="/img/New&Event image/sc.jpeg"  class="img-news">
+          <img src="/img/New&Event/sc.jpeg"  class="img-news">
           <div  class="new-text" ></div>
         </div>
     </div>
     <div class="list-1" >
         <div class="new" >
-          <img src="/img/New&Event image/sc.jpeg"  class="img-news">
+          <img src="/img/New&Event/sc.jpeg"  class="img-news">
+          <div  class="new-text" ></div>
+        </div>
+    </div>
+    <div class="list-1"  >
+        <div class="new" >
+          <img src="/img/New&Event/sc.jpeg"  class="img-news">
           <div  class="new-text" ></div>
         </div>
     </div>
     <div class="list-1" >
+      <div class="new" >
+        <a href="http://news.chu.edu.tw/p/406-1001-20725,r14.php?Lang=zh-tw"><img src="/img/New&Event/new3.jpg"  class="img-news"></a>
+        <div  class="new-text" >
+          <p>2021-02-23</p>
+          <a href="http://news.chu.edu.tw/p/406-1001-20725,r14.php?Lang=zh-tw"><h3>型塑學生品格力！中華大學連續五年獲教育部品德教育績優表揚</h1></a>
+          <h5>隨著時代的變化，職場對於人才的選用除了專業技能外，更是注重個人的品德教育。中華大學長久以來著重推動陽光青年全人教育，同時開設多門品德教育課程，於2020年已連續第五年獲得教育部北一區...</h1>
+
+        </div>
+      </div>
+  </div>
+    <div class="list-1" >
         <div class="new" >
-          <img src="/img/New&Event image/sc.jpeg"  class="img-news">
+          <img src="/img/New&Event/chu.jpg"  class="img-news">
           <div  class="new-text" ></div>
         </div>
     </div>
-    <div class="list-1" >
+    <div class="list-1"  >
         <div class="new" >
-          <img src="/img/New&Event image/sc.jpeg"  class="img-news">
+          <img src="/img/New&Event/chu.jpg"  class="img-news">
           <div  class="new-text" ></div>
         </div>
     </div>
-    <div class="list-1" >
+    <div class="list-1"   >
         <div class="new" >
-          <img src="/img/New&Event image/sc.jpeg"  class="img-news">
-          <div  class="new-text" ></div>
-        </div>
-    </div>
-    <div class="list-1" >
-        <div class="new" >
-          <img src="/New&Event image/sc.jpeg"  class="img-news">
-          <div  class="new-text" ></div>
-        </div>
-    </div>
-    <div class="list-1" >
-        <div class="new" >
-          <img src="/New&Event image/chu.jpg"  class="img-news">
-          <div  class="new-text" ></div>
-        </div>
-    </div>
-    <div class="list-1" >
-        <div class="new" >
-          <img src="/New&Event image/chu.jpg"  class="img-news">
-          <div  class="new-text" ></div>
-        </div>
-    </div>
-    <div class="list-1" >
-        <div class="new" >
-          <img src="/New&Event image/chu.jpg"  class="img-news">
-          <div  class="new-text" ></div>
-        </div>
-    </div>
-    <div class="list-1" >
-        <div class="new" >
-          <img src="/New&Event image/chu.jpg"  class="img-news">
+          <img src="/img/New&Event/chu.jpg"  class="img-news">
           <div  class="new-text" ></div>
         </div>
     </div>
       
+
+
+
+
     </div>
+    <!-- a2 -->
+    
+
+
+
+
   </div>
-
-
-
-
-
-
-
 
 
 
@@ -183,9 +237,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
     <script src="/js/index/New&Event.js"></script>
 

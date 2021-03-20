@@ -1,3 +1,17 @@
+$(document).ready(function() { 
+  var a = $("#pagelink").offset().top; 
+
+  $(document).scroll(function(){ 
+   if($(this).scrollTop() > 50) 
+   { 
+    $('#pagelink').css({"background":"rgba(0, 0, 0, 0.541)"}); 
+   } else { 
+    $('#pagelink').css({"background":"black"}); 
+   } 
+  }); 
+ }); 
+
+// 換
 (function($){
     
     var paginate = {
@@ -164,3 +178,75 @@
 /* This part is just for the demo,
 not actually part of the plugin */
 $('.list-1').paginate(8);
+// 隱藏1
+function listBtn() {
+    var textlistn = document.getElementById('textlistn');
+    if (textlistn.style.display === 'none') {
+      textlistn.style.display = 'block';
+    textlistn1.style.display = 'none';
+    textlistn2.style.display = 'none';
+    textlistn3.style.display = 'none';
+   textlistn4.style.display = 'none';
+     textlistn5.style.display = 'none';
+    } 
+  }
+  // 隱藏2
+  function listBtn1() {
+    var textlistn1 = document.getElementById('textlistn1');
+    if (textlistn1.style.display === 'none') {
+      textlistn1.style.display = 'block';
+      textlistn.style.display = 'none';
+      textlistn2.style.display = 'none';
+      textlistn3.style.display = 'none';
+      textlistn4.style.display = 'none';
+      textlistn5.style.display = 'none';
+    } 
+  }
+  // 隱藏3
+  function listBtn2() {
+    var textlistn2 = document.getElementById('textlistn2');
+    if (textlistn2.style.display === 'none') {
+      textlistn2.style.display = 'block';
+      textlistn.style.display = 'none';
+      textlistn1.style.display = 'none';
+      textlistn3.style.display = 'none';
+      textlistn4.style.display = 'none';
+      textlistn5.style.display = 'none';
+    } 
+  }
+  // 隱藏4
+  function listBtn3() {
+    var textlistn3 = document.getElementById('textlistn3');
+    if (textlistn3.style.display === 'none') {
+      textlistn3.style.display = 'block';
+      textlistn.style.display = 'none';
+      textlistn1.style.display = 'none';
+      textlistn2.style.display = 'none';
+      textlistn4.style.display = 'none';
+      textlistn5.style.display = 'none';
+    } 
+  }
+  // 隱藏5
+  function listBtn4() {
+    var textlistn4 = document.getElementById('textlistn4');
+    if (textlistn4.style.display === 'none') {
+      textlistn4.style.display = 'block';
+      textlistn.style.display = 'none';
+      textlistn1.style.display = 'none';
+      textlistn3.style.display = 'none';
+      textlistn2.style.display = 'none';
+      textlistn5.style.display = 'none';
+    } 
+  }
+  // 隱藏6
+  function listBtn5() {
+    var textlistn5 = document.getElementById('textlistn5');
+    if (textlistn5.style.display === 'none') {
+      textlistn5.style.display = 'block';
+      textlistn.style.display = 'none';
+      textlistn1.style.display = 'none';
+      textlistn2.style.display = 'none';
+      textlistn4.style.display = 'none';
+      textlistn3.style.display = 'none';
+    } 
+  }
