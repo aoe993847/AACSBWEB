@@ -3,7 +3,7 @@
     background-color: black;
     padding: 1% 0;
     border-color: transparent;
-   
+    margin-bottom: 0;
     
   }
   #pagelink ul li{
@@ -46,6 +46,8 @@
     .menu{
       width: 100%;
     }
+ 
+  
   }
   @media screen and (Max-Width:  1100px) {
   
@@ -69,10 +71,6 @@
   }
   
   /* navbar end */
-  .space{
-    width: 100%;
-    height: 116px;
-}
 
 .box{
     padding-bottom: 1%;
