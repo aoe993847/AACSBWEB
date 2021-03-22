@@ -71,6 +71,7 @@
   background-color: black;
   padding: 1% 0;
   border-color: transparent;
+  margin-bottom: 0;
   
 }
 #pagelink ul li{
@@ -128,8 +129,8 @@
 
   }
   #pagelink li a{
-    font-size: 11px;
-  }
+      font-size: 11px;
+    }
   .menu{
     justify-content: none;
   }
@@ -144,7 +145,7 @@
   height: auto;
   justify-content: center;
   background-image: url(/img/index/pexels-chait-goli-2093323.jpg);
-  padding-top: 10%;
+  padding-top: 5%;
   padding-bottom: 0%;
 }
 
