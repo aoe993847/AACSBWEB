@@ -148,6 +148,10 @@
   }
 }
 
+
+/* navbar end */
+
+
 .titlebox{
   display: flex;
   position: relative;
@@ -246,6 +250,25 @@ a background is specified in the script */
 }
 
 /* remove the default properties of the anchor links describing the news items */
+.news--item {
+  text-decoration: none;
+  color: inherit;
+  margin: 1.25rem 0;
+  padding-left: 0.75rem;
+  border-left: 4px solid blue;
+  
+} */
+/* on hover and when focused slightly decrease the weight of the anchor links */
+ .news--item:hover,
+.news--item:focus {
+  color: hsl(0, 0%, 35%);
+}
+.news--item .date {
+  font-size: larger;
+}
+.news--item .title {
+  font-size: larger;
+}
 
 
 /* footer start */
