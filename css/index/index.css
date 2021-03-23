@@ -67,6 +67,10 @@
   70%, to { clip-path: polygon(115% 0%, 120% 0%, 120% 100%, 115% 100%) }
 }
 /* navbar start */
+.navbar-toggle,.navbar-default:focus,
+.navbar-toggle,.navbar-default:hover{
+  background-color: transparent;
+}
 #pagelink{
   background-color: black;
   padding: 1% 0;
@@ -121,7 +125,7 @@
     font-size: 15px;
   }
 }
-@media screen and (Max-Width:  991px) {
+@media screen and (Max-Width:  992px) {
 
   #pagelink{
     display: block;
@@ -131,13 +135,18 @@
   #pagelink li a{
       font-size: 11px;
     }
-  .menu{
-    display: block;
-    justify-content: none;
+
+}
+@media screen and (Max-Width:  842px) {
+  #pagelink li a{
+    font-size: 5px;
   }
 }
-
-/* navbar end */
+@media screen and (Max-Width:  767px) {
+  .menu{
+    display: block;
+  }
+}
 
 .titlebox{
   display: flex;
@@ -237,60 +246,7 @@ a background is specified in the script */
 }
 
 /* remove the default properties of the anchor links describing the news items */
-.news--item {
-  text-decoration: none;
-  color: inherit;
-  margin: 1.25rem 0;
-  padding-left: 0.75rem;
-  border-left: 4px solid blue;
-  
-}
-/* on hover and when focused slightly decrease the weight of the anchor links */
-.news--item:hover,
-.news--item:focus {
-  color: hsl(0, 0%, 35%);
-}
-.news--item .date {
-  font-size: larger;
-}
-.news--item .title {
-  font-size: larger;
-}
 
-@media (max-width: 991px) {
-  .navbar-header {
-      float: none;
-  }
-  .navbar-toggle {
-      display: block;
-  }
-
-.navbar-collapse {
-  border-top: 1px solid transparent;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-}
-.navbar-collapse.collapse {
-  display: none!important;
-}
-.navbar-nav>li {
-  float: none;
-}
-.navbar-nav>li>a {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.navbar-text {
-  float: none;
-  margin: 15px 0;
-}
-/* since 3.1.0 */
-.navbar-collapse.collapse.in { 
-  display: block!important;
-}
-.collapsing {
-  overflow: hidden!important;
-}
-}
 
 /* footer start */
 .footers{
