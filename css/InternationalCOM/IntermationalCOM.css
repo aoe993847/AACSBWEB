@@ -1,4 +1,8 @@
 /* navbar start */
+.navbar-toggle,.navbar-default:focus,
+.navbar-toggle,.navbar-default:hover{
+  background-color: transparent;
+}
 #pagelink{
   background-color: black;
   padding: 1% 0;
