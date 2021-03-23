@@ -1,4 +1,81 @@
 
+/* navbar start */
+#pagelink{
+	background-color: black;
+	padding: 1% 0;
+	border-color: transparent;
+	margin-bottom: 0;
+	
+  }
+  #pagelink ul li{
+  
+  
+	color: white;
+	z-index: 1;
+  
+  }
+  
+  #pagelink li a{
+	color: white;
+	font-size: 20px;
+  }
+  #pagelink li:hover a{
+	color: orange;
+	border-bottom: 2px solid orange;
+	background-color: transparent;
+  }
+  #active{
+	color: orange !important;;
+	border-bottom: 2px solid orange;
+  }
+  .menu{
+	display: flex;
+	width: 70%;
+	justify-content: space-between;
+  }
+  
+  @media screen and (Max-Width:  1400px) {
+	.logo{
+	  width: 100%;
+	}
+	#pagelink{
+	  display: flex;
+	  justify-content: space-evenly;
+	  padding: 0;
+	  flex-wrap: wrap;
+	}
+	.menu{
+	  width: 100%;
+	}
+  }
+  @media screen and (Max-Width:  1100px) {
+  
+	#pagelink li a{
+	  font-size: 15px;
+	}
+  }
+  @media screen and (Max-Width:  991px) {
+  
+	#pagelink{
+	  display: block;
+	  justify-content: none;
+  
+	}
+	#pagelink li a{
+		font-size: 11px;
+	  }
+	.menu{
+	  display: block;
+	  justify-content: none;
+	}
+  }
+  
+  /* navbar end */
+
+
+
+
+
 .body{
     background-image: url("/img/LifeinCOM/a.jpg");
     width: 100%;
@@ -161,3 +238,107 @@ ul.tabs li.active {
 	margin-left: 10%;
 	width: 50%;
 }
+/* 1 */
+.view{
+	margin-left: 10%;
+}
+.st1{
+	background-color: blue;
+}
+.move{
+	width:100%;
+	margin-left: 3%;
+}
+.move1{
+	width:100%;
+}
+.t1{
+	margin-top: 15px;
+}
+/* 4 */
+.t4{
+	font-size: 25px;
+	width: 100%;
+	margin-left: 50PX;
+	margin-right: 50PX;
+}
+.title{
+	border-bottom-style:solid; 
+}
+.m-title{
+	font-size: 20px;
+	margin-top: 2px;
+}
+.move4{
+	margin-top: 10px;
+}
+.text{
+	margin-left: 25px;
+}
+
+
+
+/* footer start */
+.footers{
+	padding: 2% 0;
+	background-color: black;
+	color: white;
+  }
+  .footerbox{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  }
+  .ciclebox{
+	margin-top: 10%;
+	width: 250px;
+	display: flex;
+	justify-content: space-evenly;
+  }
+  .cicle{
+	width: 40px;
+	height: 40px;
+	border: 2px solid black;
+	border-radius: 99%;
+  }
+  .connection{
+	margin-left: 5%;
+  }
+  .ftitle{
+	font-size: 20px;
+  }
+  .footerlinkbox{
+	display: flex;
+	flex-wrap: wrap;
+  }
+  .footerlink ul{
+   
+	list-style: none;
+  }
+  .footerlink li{
+	margin-bottom: 8%;
+  }
+  .footerlink a{
+	font-size: 15px;
+	color: white;
+  }
+  .footerlink a:hover{
+	color: orange;
+  }
+  .yt{
+	background-image: url(/img/index/yt.png);
+	background-size: 100% 100%;
+  }
+  .fb{
+	background-image: url(/img/index/fb.png);
+	background-size: 100% 100%;
+  }
+  .ig{
+	background-image: url(/img/index/IG.png);
+	background-size: 100% 100%;
+  }
+  .line{
+	background-image: url(/img/index/line.png);
+	background-size: 100% 100%;
+  }
+  /* footer end */
