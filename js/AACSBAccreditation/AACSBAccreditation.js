@@ -6,7 +6,7 @@ $('.filtering').slick({
     dots: true,
     arrows: true,
     autoplay:true,
-    autoplaySpeed: 200,  
+    autoplaySpeed: 2000,  
     
 
   });
