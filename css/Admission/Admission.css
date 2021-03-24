@@ -4,84 +4,97 @@
   background-color: transparent;
 }
 #pagelink{
-    background-color: black;
-    padding: 1% 0;
-    border-color: transparent;
-    margin-bottom: 0;
-    
-  }
-  #pagelink ul li{
+  background-color: black;
+  padding: 1% 0;
+  border-color: transparent;
+  margin-bottom: 0;
   
-  
-    color: white;
-    z-index: 1;
-  
+}
+
+
+#pagelink ul li{
+
+
+  color: white;
+  z-index: 1;
+
+}
+
+#pagelink li a{
+  color: white;
+  font-size: 20px;
+}
+#pagelink li:hover a{
+  color: orange;
+  border-bottom: 2px solid orange;
+  background-color: transparent;
+}
+#active{
+  color: orange !important;;
+  border-bottom: 2px solid orange;
+}
+.menu{
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+
+@media screen and (Max-Width:  1425px) {
+  .logo{
+    width: 100%;
   }
-  
-  #pagelink li a{
-    color: white;
-    font-size: 20px;
-  }
-  #pagelink li:hover a{
-    color: orange;
-    border-bottom: 2px solid orange;
-    background-color: transparent;
-  }
-  #active{
-    color: orange !important;;
-    border-bottom: 2px solid orange;
+  #pagelink{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    flex-wrap: wrap;
   }
   .menu{
-    display: flex;
-    width: 70%;
-    justify-content: space-between;
+    width: 100%;
   }
-  
-  @media screen and (Max-Width:  1400px) {
-    .logo{
-      width: 100%;
+}
+@media screen and (Max-Width:  1165px) {
+
+  #pagelink li a{
+    font-size: 15px;
+  }
+}
+@media screen and (Max-Width:  992px) {
+
+  #pagelink{
+    display: block;
+    justify-content: none;
+
+  }
+  #pagelink li a{
+      font-size: 11px;
     }
-    #pagelink{
+    #pagelink ul {
       display: flex;
-      justify-content: space-evenly;
-      padding: 0;
       flex-wrap: wrap;
     }
     .menu{
-      width: 100%;
+      justify-content: center;
     }
+
+}
+@media screen and (Max-Width:  842px) {
+  #pagelink li a{
+    font-size: 5px;
   }
-  @media screen and (Max-Width:  1100px) {
-  
-    #pagelink li a{
-      font-size: 15px;
-    }
+  #pagelink li{
+    width: 150px;
   }
-  @media screen and (Max-Width:  992px) {
-  
-    #pagelink{
-      display: block;
-      justify-content: none;
-  
-    }
-    #pagelink li a{
-        font-size: 11px;
-      }
-  
+}
+@media screen and (Max-Width:  767px) {
+  .menu{
+    display: block;
   }
-  @media screen and (Max-Width:  842px) {
-    #pagelink li a{
-      font-size: 5px;
-    }
-  }
-  @media screen and (Max-Width:  767px) {
-    .menu{
-      display: block;
-    }
-  }
-  
-  
-  /* navbar end */
+}
+
+
+/* navbar end */
+
 
 body{
     background-image: url(/img/Admission/213852281_waifu2x_photo_noise3_scale_tta_1.png);
