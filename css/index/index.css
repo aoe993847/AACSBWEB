@@ -282,7 +282,74 @@ a background is specified in the script */
 .news--item .title {
   font-size: larger;
 }
-
+.Admissions{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2% 0;
+}
+.Admissions header{
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  padding: 2% 0;
+}
+.adm{
+  width: 50%;
+  display: flex;
+  border: 2px solid black;
+}
+.admimg{
+  padding: 2%;
+  display: flex;
+}
+.admimg img{
+  width: 300px;
+  height: 30vh;
+  align-self: center;
+}
+.admword{
+  width: 100%;
+  padding: 2%;
+  font-size: 18px;
+}
+@media screen and (Max-Width:  1350px) {
+  .adm{
+    width: 100%;
+  }
+}
+@media screen and (Max-Width:  700px) {
+  .admimg img{
+    width: 200px;
+    height: 20vh;
+  }
+  .admword{
+    font-size: 14px;
+  }
+}
+@media screen and (Max-Width:  800px) {
+  .Admissions{
+    width: 100%;
+    margin: 0;
+  }
+}
+@media screen and (Max-Width:  700px) {
+  .admimg img{
+    width: 200px;
+    height: 20vh;
+  }
+  .admword{
+    font-size: 14px;
+  }
+}
+@media screen and (Max-Width:  500px) {
+  .adm{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 
 /* footer start */
 .footers{

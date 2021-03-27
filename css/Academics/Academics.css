@@ -292,20 +292,29 @@ body{
     padding: 2% 0;
     background-color: rgb(190, 93, 48);
 }
+.facultiescontainer{
+    background-color: burlywood;
+}
 .faculties{
     display: flex;
-    background-color: burlywood;
+    
 }
 .fimgbox{
     padding: 2%;
+    align-self: center;
 }
 .fimgbox img{
     width: 400px;
     height: 400px;
 }
+.fwordbox{
+    width: 70%;
+}
+.fwordup{
+    border-bottom: 2px solid black;
+}
 .fword{
     display: flex;
-    width: 70%;
     padding: 2% 1%;
     font-size: 25px;
     flex-wrap: wrap;
@@ -313,6 +322,11 @@ body{
 }
 .fword p{
     width: 100%;
+}
+.ftable{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
 }
 .bst{
     width: 100%;
@@ -361,7 +375,7 @@ body{
         flex-direction: column-reverse;
         flex-wrap: wrap;
     }
-    .fword{
+    .fwordbox{
         width: 100%;
     }
     .fimgbox{

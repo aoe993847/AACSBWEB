@@ -181,7 +181,9 @@
 .sarticle{
     width: 75%;
     font-size: 30px;
-    padding: 2%;
+}
+.sarticle p{
+  padding: 2%;
 }
 
 @media screen and (Max-Width: 1280px) {
