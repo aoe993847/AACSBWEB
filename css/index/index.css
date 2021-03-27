@@ -298,17 +298,18 @@ a background is specified in the script */
 }
 .adm{
   width: 50%;
-  display: flex;
   border: 2px solid black;
 }
 .admimg{
+  width: 100%;
   padding: 2%;
   display: flex;
+  justify-content: center;
 }
 .admimg img{
-  width: 300px;
-  height: 30vh;
-  align-self: center;
+  width: 500px;
+  height: 40vh;
+ 
 }
 .admword{
   width: 100%;
@@ -316,38 +317,35 @@ a background is specified in the script */
   font-size: 18px;
 }
 @media screen and (Max-Width:  1350px) {
-  .adm{
+  .admimg img{
+    width: 350px;
+    height: 25vh;
+   
+  }
+ 
+}
+@media screen and (Max-Width:  1000px) {
+
+  .admword{
+    font-size: 15px;
+  }
+   .adm{
     width: 100%;
   }
 }
-@media screen and (Max-Width:  700px) {
-  .admimg img{
-    width: 200px;
-    height: 20vh;
-  }
-  .admword{
-    font-size: 14px;
-  }
-}
-@media screen and (Max-Width:  800px) {
+@media screen and (Max-Width:  500px) {
+
   .Admissions{
     width: 100%;
     margin: 0;
   }
 }
-@media screen and (Max-Width:  700px) {
+@media screen and (Max-Width:  400px) {
+
   .admimg img{
-    width: 200px;
-    height: 20vh;
-  }
-  .admword{
-    font-size: 14px;
-  }
-}
-@media screen and (Max-Width:  500px) {
-  .adm{
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 250px;
+    height: 15vh;
+   
   }
 }
 
